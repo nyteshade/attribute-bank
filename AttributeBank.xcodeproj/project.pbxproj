@@ -14,6 +14,18 @@
 		014D5FF42C2239EC0083A295 /* AttributeBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D5FF32C2239EC0083A295 /* AttributeBankTests.swift */; };
 		014D5FFE2C2239EC0083A295 /* AttributeBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D5FFD2C2239EC0083A295 /* AttributeBankUITests.swift */; };
 		014D60002C2239EC0083A295 /* AttributeBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D5FFF2C2239EC0083A295 /* AttributeBankUITestsLaunchTests.swift */; };
+		014D60102C223D440083A295 /* _main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D600F2C223D440083A295 /* _main.swift */; };
+		014D60122C2243B80083A295 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D60112C2243B80083A295 /* MenuBar.swift */; };
+		014D60142C224AEF0083A295 /* MenuCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D60132C224AEF0083A295 /* MenuCommands.swift */; };
+		014D60172C2353230083A295 /* CommandData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D60162C2353230083A295 /* CommandData.swift */; };
+		014D60192C2356910083A295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D60182C2356910083A295 /* AppDelegate.swift */; };
+		014D601C2C23E2760083A295 /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 014D601B2C23E2760083A295 /* BitCollections */; };
+		014D601E2C23E2760083A295 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 014D601D2C23E2760083A295 /* Collections */; };
+		014D60202C23E2760083A295 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 014D601F2C23E2760083A295 /* DequeModule */; };
+		014D60222C23E2760083A295 /* HashTreeCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 014D60212C23E2760083A295 /* HashTreeCollections */; };
+		014D60242C23E2760083A295 /* HeapModule in Frameworks */ = {isa = PBXBuildFile; productRef = 014D60232C23E2760083A295 /* HeapModule */; };
+		014D60262C23E2760083A295 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 014D60252C23E2760083A295 /* OrderedCollections */; };
+		014D60282C23FAC70083A295 /* MenuDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014D60272C23FAC70083A295 /* MenuDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,12 @@
 		014D5FF92C2239EC0083A295 /* AttributeBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttributeBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		014D5FFD2C2239EC0083A295 /* AttributeBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeBankUITests.swift; sourceTree = "<group>"; };
 		014D5FFF2C2239EC0083A295 /* AttributeBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		014D600F2C223D440083A295 /* _main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _main.swift; sourceTree = "<group>"; };
+		014D60112C2243B80083A295 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		014D60132C224AEF0083A295 /* MenuCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCommands.swift; sourceTree = "<group>"; };
+		014D60162C2353230083A295 /* CommandData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandData.swift; sourceTree = "<group>"; };
+		014D60182C2356910083A295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		014D60272C23FAC70083A295 /* MenuDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014D601E2C23E2760083A295 /* Collections in Frameworks */,
+				014D60242C23E2760083A295 /* HeapModule in Frameworks */,
+				014D60262C23E2760083A295 /* OrderedCollections in Frameworks */,
+				014D601C2C23E2760083A295 /* BitCollections in Frameworks */,
+				014D60222C23E2760083A295 /* HashTreeCollections in Frameworks */,
+				014D60202C23E2760083A295 /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +119,13 @@
 		014D5FE02C2239EC0083A295 /* AttributeBank */ = {
 			isa = PBXGroup;
 			children = (
-				014D5FE12C2239EC0083A295 /* AttributeBankApp.swift */,
-				014D5FE32C2239EC0083A295 /* ContentView.swift */,
-				014D5FE52C2239EC0083A295 /* Assets.xcassets */,
 				014D5FEA2C2239EC0083A295 /* AttributeBank.entitlements */,
+				014D5FE52C2239EC0083A295 /* Assets.xcassets */,
+				014D600E2C223D1F0083A295 /* App Root */,
+				014D600D2C223CCB0083A295 /* Extensions */,
+				014D60152C2353150083A295 /* Models */,
 				014D5FE72C2239EC0083A295 /* Preview Content */,
+				014D600C2C223CBF0083A295 /* UI */,
 			);
 			path = AttributeBank;
 			sourceTree = "<group>";
@@ -129,6 +155,42 @@
 			path = AttributeBankUITests;
 			sourceTree = "<group>";
 		};
+		014D600C2C223CBF0083A295 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				014D5FE32C2239EC0083A295 /* ContentView.swift */,
+				014D60112C2243B80083A295 /* MenuBar.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		014D600D2C223CCB0083A295 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		014D600E2C223D1F0083A295 /* App Root */ = {
+			isa = PBXGroup;
+			children = (
+				014D60182C2356910083A295 /* AppDelegate.swift */,
+				014D5FE12C2239EC0083A295 /* AttributeBankApp.swift */,
+				014D60132C224AEF0083A295 /* MenuCommands.swift */,
+				014D600F2C223D440083A295 /* _main.swift */,
+			);
+			path = "App Root";
+			sourceTree = "<group>";
+		};
+		014D60152C2353150083A295 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				014D60162C2353230083A295 /* CommandData.swift */,
+				014D60272C23FAC70083A295 /* MenuDictionary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +207,14 @@
 			dependencies = (
 			);
 			name = AttributeBank;
+			packageProductDependencies = (
+				014D601B2C23E2760083A295 /* BitCollections */,
+				014D601D2C23E2760083A295 /* Collections */,
+				014D601F2C23E2760083A295 /* DequeModule */,
+				014D60212C23E2760083A295 /* HashTreeCollections */,
+				014D60232C23E2760083A295 /* HeapModule */,
+				014D60252C23E2760083A295 /* OrderedCollections */,
+			);
 			productName = AttributeBank;
 			productReference = 014D5FDE2C2239EC0083A295 /* AttributeBank.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +287,9 @@
 				Base,
 			);
 			mainGroup = 014D5FD52C2239EC0083A295;
+			packageReferences = (
+				014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 014D5FDF2C2239EC0083A295 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +332,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				014D60102C223D440083A295 /* _main.swift in Sources */,
 				014D5FE42C2239EC0083A295 /* ContentView.swift in Sources */,
+				014D60282C23FAC70083A295 /* MenuDictionary.swift in Sources */,
+				014D60122C2243B80083A295 /* MenuBar.swift in Sources */,
+				014D60172C2353230083A295 /* CommandData.swift in Sources */,
+				014D60192C2356910083A295 /* AppDelegate.swift in Sources */,
+				014D60142C224AEF0083A295 /* MenuCommands.swift in Sources */,
 				014D5FE22C2239EC0083A295 /* AttributeBankApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,6 +660,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		014D601B2C23E2760083A295 /* BitCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = BitCollections;
+		};
+		014D601D2C23E2760083A295 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		014D601F2C23E2760083A295 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		014D60212C23E2760083A295 /* HashTreeCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HashTreeCollections;
+		};
+		014D60232C23E2760083A295 /* HeapModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = HeapModule;
+		};
+		014D60252C23E2760083A295 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 014D601A2C23E2760083A295 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 014D5FD62C2239EC0083A295 /* Project object */;
 }
